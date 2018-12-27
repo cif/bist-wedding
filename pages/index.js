@@ -61,10 +61,11 @@ const Index = () => {
         .footer {
           position: relative;
           background-color: #E9D3B4;
-          padding: 35px 0 50px 0;
+          padding: 35px 20px 50px 20px;
           top: -10px;
           text-align: center;
           font-size: 13px;
+          line-height: 25px;
         }
         .footer a{
           color: #A24634;
@@ -73,8 +74,8 @@ const Index = () => {
         }
         @media only screen and (max-width: 900px)  {
           .content {
-             min-height: 400px;
-             padding: 95px 35px;
+             min-height: 100px;
+             padding: 95px 35px 0 35px;
           }
           .content h1{
             font-size: 50px;
@@ -88,6 +89,9 @@ const Index = () => {
           .content p{
             font-size: 15px;
             line-height: 24px;
+          }
+          .footer {
+            padding: 50px;
           }
         }
       `}

@@ -18,7 +18,10 @@ const scrollEffect = () => {
       setCloudPositionY(computeCloudPositionY())
       setCloudOpacity(computeCloudOpacity())
     }
-    window.addEventListener('scroll', handleScroll)
+    // only add scroll effect if its probably desktop
+    if (window.innerWidth > 1000) {
+      window.addEventListener('scroll', handleScroll)
+    }
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
