@@ -8,7 +8,8 @@ const FooterImage = () => {
     footerImageHeight
   } = resizeEffect()
   const {
-    cloudPosition,
+    cloudPositionX,
+    cloudPositionY,
     cloudOpacity
   } = scrollEffect()
   
@@ -33,8 +34,8 @@ const FooterImage = () => {
         }
         .clouds-img {
           position: absolute;
-          top: 0;
-          left: ${cloudPosition}px;
+          top:  ${cloudPositionY}px;
+          left: ${cloudPositionX}px;
           background-image: url('/static/clouds.png');
           background-repeat: no-repeat;
           background-position: top center;

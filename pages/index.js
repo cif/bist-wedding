@@ -103,8 +103,8 @@ const Index = () => {
         </div>
         <FooterImage />
         <div className="footer">
-          <p>Handcrafted with &#9829; in Portland, Oregon</p>
-          <p>Created with React/Next.js. Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
+          <p>Coded with React 16 + Next.js + &#9829;. Deployed fearlessly with <a href="https://now.sh" target="_blank">Now</a>.<br /> 
+          Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
         </div>
       </div>
   
