@@ -1,14 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import Stars from '../components/Stars'
-import resizeEffect from '../effects/resizeEffect'
+import FooterImage from '../components/FooterImage'
 import countDownEffect from '../effects/countDownEffect'
 
 const Index = () => {
-  const { 
-    footerImageHeight, 
-    starsImageHeight
-  } = resizeEffect()
   const {
     countDown
   } = countDownEffect()
@@ -44,7 +40,7 @@ const Index = () => {
         h1{
            font-weight: 300;
            font-size: 80px;
-           margin: 0;
+           margin: 10px 0;
         }
         .content {
           height: 400px;
@@ -62,15 +58,6 @@ const Index = () => {
           line-height: 30px;
           text-transform: none;
         }
-        .bottom-img {
-          background-image: url('/static/mt-hood-bottom.png');
-          background-repeat: no-repeat;
-          background-position: top center;
-          background-size: contain;
-          height: ${footerImageHeight}px;
-          width: 100%;
-        }
-        
         .footer {
           position: relative;
           background-color: #E9D3B4;
@@ -78,6 +65,11 @@ const Index = () => {
           top: -10px;
           text-align: center;
           font-size: 13px;
+        }
+        .footer a{
+          color: #A24634;
+          font-weight: 400;
+          text-decoration: none;
         }
         @media only screen and (max-width: 900px)  {
           .content {
@@ -107,11 +99,12 @@ const Index = () => {
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3>{countDown}</h3>
           <p>RSVP information will arrive with invitations soon. <br /> 
-          We look forward to having you with us in September</p>
+          We look forward to having you with us in September.</p>
         </div>
-        <div className="bottom-img"></div>
+        <FooterImage />
         <div className="footer">
           <p>Handcrafted with &#9829; in Portland, Oregon</p>
+          <p>Created with React/Next.js. Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
         </div>
       </div>
   

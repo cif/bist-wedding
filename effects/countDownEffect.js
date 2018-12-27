@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import moment from 'moment'
 
 const countDownEffect = () => {
-  const [countDown, setCountDown] = useState('')
+  const [countDown, setCountDown] = useState('...')
   useEffect(() => {
     const countDownTimer = setInterval(() => {
       const weddingDate = 1568478000

@@ -1,38 +1,30 @@
 import { useState, useEffect } from 'react'
 const computeFooterImageHeight = () => Math.floor(window.innerWidth * (877 / 1900))
 const computeStarsHeight = () => Math.floor(window.innerWidth * (700 / 1781))
-const computeStarsPosition = () => (Math.floor(window.scrollY * 0.2) * -1)
+const computeCloudImageHeight = () => Math.floor(window.innerWidth * (331 / 1878))
 
 const browserEffects = () => {
-  if(!process.browser){
-    return {
-      footerImageHeight: 0,
-      starsImageHeight: 200,
-      starsPosition: 0
-    }
-  } 
-  const [footerImageHeight, setFooterImageHeight] = useState(computeFooterImageHeight())
-  const [starsImageHeight, setStarsImageHeight] = useState(computeStarsHeight())
-  const [starsPosition, setStarsPosition] = useState(computeStarsPosition())
+  const [footerImageHeight, setFooterImageHeight] = useState(0)
+  const [starsImageHeight, setStarsImageHeight] = useState(0)
+  const [cloudImageHeight, setCloudImageHeight] = useState(0)
   useEffect(() => {
     const handleResize = () => {
       setFooterImageHeight(computeFooterImageHeight())
       setStarsImageHeight(computeStarsHeight())
+      setCloudImageHeight(computeCloudImageHeight())
     }
-    const handleScroll = () => {
-      setStarsPosition(computeStarsPosition())
+    if (footerImageHeight === 0) {
+      handleResize() // initial load
     }
     window.addEventListener('resize', handleResize)
-    window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('resize', handleResize)
-      window.removeEventListener('scroll', handleScroll)
     }
   })
   return {
     footerImageHeight,
     starsImageHeight,
-    starsPosition
+    cloudImageHeight
   }
 }
 

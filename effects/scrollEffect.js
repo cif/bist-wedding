@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react'
-const computeStarsPosition = () => (Math.floor(window.scrollY * 0.2) * -1)
+
+const CLOUD_STARTING_POSITION = 20
+const computeStarsPosition = () => (Math.floor(window.scrollY * 0.4) * -1)
+const computeCloudPosition = () => (Math.floor(window.scrollY * 0.16)) + CLOUD_STARTING_POSITION
+const computeCloudOpacity = () => 100 / (window.scrollY + 2)
 
 const scrollEffect = () => {
-  if(!process.browser){
-    return {
-      starsPosition: 0
-    }
-  } 
-  const [starsPosition, setStarsPosition] = useState(computeStarsPosition())
+  const [starsPosition, setStarsPosition] = useState(0)
+  const [cloudPosition, setCloudPosition] = useState(0)
+  const [cloudOpacity, setCloudOpacity] = useState(1)
   useEffect(() => {
     const handleScroll = () => {
       setStarsPosition(computeStarsPosition())
+      setCloudPosition(computeCloudPosition())
+      setCloudOpacity(computeCloudOpacity())
     }
     window.addEventListener('scroll', handleScroll)
     return () => {
@@ -18,7 +21,9 @@ const scrollEffect = () => {
     }
   })
   return {
-    starsPosition
+    starsPosition,
+    cloudPosition,
+    cloudOpacity
   }
 }
 
