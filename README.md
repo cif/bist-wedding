@@ -1,3 +1,3 @@
 # Wedding Website
 
-Learning excersize and fun project created with Next.js / React effects API
+Learning exercise and fun project created with Next.js / React effects API
