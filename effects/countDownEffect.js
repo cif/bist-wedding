@@ -5,7 +5,7 @@ const countDownEffect = () => {
   const [countDown, setCountDown] = useState('...')
   useEffect(() => {
     const countDownTimer = setInterval(() => {
-      const weddingDate = 1568478000
+      const weddingDate = 1568460000
       const rightNow = moment(new Date()).unix()
       const duration = moment.duration((weddingDate - rightNow) * 1000) 
       setCountDown(`${duration.months()} months, ${duration.days()} days, ${duration.hours()} hours, ${duration.minutes()} minutes, ${duration.seconds()} seconds`)

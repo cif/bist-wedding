@@ -21,6 +21,8 @@ const FooterImage = () => {
       {`
         .footer-img-container {
           position: relative;
+          width: 100%;
+          overflow: hidden;
         }
         .bottom-img {
           position: relative;
