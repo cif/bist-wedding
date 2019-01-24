@@ -178,8 +178,8 @@ const Index = () => {
           <FontAwesomeIcon icon="plane" size="3x" style={{ marginBottom: 20 }} />
             <h2>Traveling Here</h2>
 <p>
-  For those of you <b>flying</b> to join us, <b>Portland International <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
-  has flights to an from all major airports.
+  For those of you <b>flying</b> to join us, <b>Portland International Airport<a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
+  has flights to and from all major airports.
   Portland (our home) is a vibrant city with a great food scene. We encourage you to take time to explore it if your plans allow.
 </p>
 <p>
