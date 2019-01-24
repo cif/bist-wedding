@@ -14,7 +14,7 @@ const Stars = () => {
       <style jsx>
       {`
         .stars-img {
-          position: absolute;
+          position: fixed;
           top: ${starsPosition}px;
           background-image: url('/static/stars.png');
           background-repeat: no-repeat;

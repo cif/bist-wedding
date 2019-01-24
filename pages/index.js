@@ -48,6 +48,7 @@ const Index = () => {
            margin: 10px 0;
         }
         .content {
+          position: relative;
           margin: 0 auto;
           min-height: 400px;
           padding: 90px 0 0 0;
@@ -139,7 +140,7 @@ const Index = () => {
       `}
       </style>
       <div className="body-wrap">
-        <Stars /> 
+        
         <div className="content">
           <h2>Ben Ipsen & Sarah Tantillo</h2> 
           <h1>09&nbsp; 14&nbsp; 19</h1>
@@ -228,6 +229,7 @@ Slightly outdated but within a walking distance from the water and downtown.
         </p>
         <br />              
         </div>
+        <Stars /> 
         <FooterImage />
         <div className="footer">
           <p>Coded with React 16 + Next.js + &#9829;. Deployed fearlessly with <a href="https://now.sh" target="_blank">Now</a>.<br /> 
