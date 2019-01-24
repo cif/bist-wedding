@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 
 const CLOUD_STARTING_POSITION = 20
 const computeStarsPosition = () => (Math.floor(window.scrollY * 0.2) * -1)
-const computeCloudPositionX = () => (Math.floor(window.scrollY * 0.12)) + CLOUD_STARTING_POSITION
+const computeCloudPositionX = () => (Math.floor(window.scrollY * 0.05)) + CLOUD_STARTING_POSITION
 const computeCloudPositionY = () => (Math.floor(window.scrollY * 0.02))
-const computeCloudOpacity = () => 100 / (window.scrollY * 0.3)
+const computeCloudOpacity = () => 100 / (window.scrollY * 0.12)
 
 const scrollEffect = () => {
   const [starsPosition, setStarsPosition] = useState(0)

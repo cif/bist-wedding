@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react'
 import moment from 'moment'
 
 const countDownEffect = () => {
-  const [countDown, setCountDown] = useState('...')
+  // intial load
+  const weddingDate = 1568502900
+  const rightNow = moment(new Date()).unix()
+  const duration = moment.duration((weddingDate - rightNow) * 1000) 
+
+  const [countDown, setCountDown] = useState(`${duration.months()} months, ${duration.days()} days, ${duration.hours()} hours, ${duration.minutes()} minutes, ${duration.seconds()} seconds`)
   useEffect(() => {
     const countDownTimer = setInterval(() => {
       const weddingDate = 1568502900
@@ -14,6 +19,7 @@ const countDownEffect = () => {
       clearInterval(countDownTimer)
     }
   })
+  
   return {
     countDown
   }

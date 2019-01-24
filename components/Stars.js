@@ -22,6 +22,7 @@ const Stars = () => {
           background-size: cover;
           height: ${starsImageHeight}px;
           width: 100%;
+          z-index: 1;
         }
       `}
       </style>
