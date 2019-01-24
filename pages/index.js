@@ -180,11 +180,11 @@ const Index = () => {
 <p>
   For those of you <b>flying</b> to join us, <b>Portland International Airport<a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
   has flights to and from all major airports.
-  Portland (our home) is a vibrant city with a great food scene. We encourage you to take time to explore it if your plans allow.
+  Portland (our home) is a vibrant city with a great food scene. We encourage you to take some time to explore it if your plans allow.
 </p>
 <p>
-  To make the most of your time here in northwest Oregon, <b>we recommend renting a car</b> though there are <b>shuttles and/or bus</b> available 
-  to transport you to Hood River where the events take place. <b>Uber</b> and <b>Lyft</b> are available for local transport around Portland and Hood River.
+  To make the most of your time here in northwest Oregon, <b>we recommend renting a car</b>. Alternatively, there are <b>shuttles and/or bus</b> available 
+  to transport you to where the wedding events will take place. <b>Uber</b> and <b>Lyft</b> are available for local transport around Portland and Hood River.
 </p>
 
 </div>
@@ -195,7 +195,7 @@ const Index = () => {
             We highly recommend all guests stay in <b>Hood River</b>, a quaint town on the Columbia River which is about a <b>one hour drive from Portland.</b>
             </p>
 <p>
-  <b>Transporation will be provided from downtown to the wedding</b> which wil take place at Mt Hood Organic Farms in Parkdale, just up the hill from Hood River.
+  <b>Transporation will be provided to/from downtown Hood River to the wedding</b> which wil take place at Mt Hood Organic Farms in Parkdale.
 </p>
 
 <p>
