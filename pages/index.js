@@ -179,7 +179,7 @@ const Index = () => {
           <FontAwesomeIcon icon="plane" size="3x" style={{ marginBottom: 20 }} />
             <h2>Traveling Here</h2>
 <p>
-  For those of you <b>flying</b> to join us, <b>Portland International Airport<a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
+  For those of you <b>flying</b> to join us, <b>Portland International Airport <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
   has flights to and from all major airports.
   Portland (our home) is a vibrant city with a great food scene. We encourage you to take some time to explore it if your plans allow.
 </p>
@@ -196,7 +196,7 @@ const Index = () => {
             We highly recommend all guests stay in <b>Hood River</b>, a quaint town on the Columbia River which is about a <b>one hour drive from Portland.</b>
             </p>
 <p>
-  <b>Transporation will be provided to/from downtown Hood River to the wedding</b> which wil take place at Mt Hood Organic Farms in Parkdale.
+  <b>Transporation will be provided to/from downtown Hood River to the wedding</b> which will take place at Mt Hood Organic Farms in Parkdale.
 </p>
 
 <p>
