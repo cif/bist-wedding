@@ -252,7 +252,7 @@ const Index = () => {
 
             Between meals be sure to check out {' '}
             <a href="https://goo.gl/maps/nLiTWxdutb92" target="_blank"><b>The Japanese & Rose Gardens</b></a>,{' '}
-            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittok Mansion & Forest Park</b></a>,{' '}
+            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittock Mansion & Forest Park</b></a>,{' '}
             <a href="https://goo.gl/maps/3tiiCwVT33k" target="_blank"><b>Powells City of Books,</b></a>{' '}
             and <a href="https://goo.gl/maps/693QTtRPGu22" target="_blank"><b>OMSI</b></a>.
           </p>
