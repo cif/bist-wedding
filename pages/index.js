@@ -190,7 +190,7 @@ const Index = () => {
               serves flights to and from most major airports in the US. Wedding events will take place an hour's drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
             </p>
             <p>
-              To make the most of your time in Oregon <b>we recommend renting a car</b>. This will provide the most flexibility and options for activity during your trip.
+              To make the most of your time in Oregon <b>we recommend renting a car</b>. This will provide the most flexibility and more activity options during your trip.
             </p>
             <p>
               Alternatively, there are <a href="https://www.rome2rio.com/map/Portland-Airport-PDX/Hood-River" target="_blank"><b>shuttles available</b></a> between Portland and where the wedding events will take place.{' '}
@@ -202,12 +202,12 @@ const Index = () => {
             <FontAwesomeIcon icon="bed" size="3x" style={{ marginBottom: 20 }} />
             <h2>Where to Stay</h2>
             <p style={{ fontSize: 18 }}>
-              During the wedding weekend we <b>suggest staying in Hood River.</b> Transporation to and from the wedding will be provided from one or two locations in the city.
+              During the wedding weekend we <b>suggest staying in Hood River.</b> Transportation to and from the wedding will be provided from one or two locations in the city.
             </p>
 
             <p>
               Bigger groups of family and/or friends may prefer to <b>rent a house</b>.
-              There are serveral options on <b>
+              There are several options on <b>
               <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
             </b> as well as{' '}
             <b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
@@ -258,7 +258,7 @@ const Index = () => {
           </p>
 
           <p>
-            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activites</b> such as{' '}
+            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activities</b> such as{' '}
             <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
             <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
             and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a> .
@@ -266,7 +266,7 @@ const Index = () => {
             <br />
             There are plenty of{' '}
             <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
-            <b>vinards and wine tastings</b></a> near by and Hood River's quaint downtown
+            <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
             offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
 
             Some or our favorite places to eat in Hood River are:
@@ -276,8 +276,8 @@ const Index = () => {
           <p>
             <b>Explore Oregon:</b>{' '}
             Stunning coastal views are only 2 hours from the Portland Airport. Check out the coastline and grab a coffee in <a href="https://goo.gl/maps/AuPGtUjBEAp" target="_blank"><b>Cannon Beach</b></a>. {' '}
-            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Bouy Beer Co.</b></a> in Astoria.
-            For more outdoor activity and guranteed sunshine the outdoorsy town of{' '}
+            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Buoy Beer Co.</b></a> in Astoria.
+            For more outdoor activity and sunshine in the high desert, the outdoorsy town of{' '}
             <a href="https://goo.gl/maps/2X6UrBPUU5w" target="_blank"><b>Bend</b></a> is about 2.5 hours from Hood River.
 
           </p>
