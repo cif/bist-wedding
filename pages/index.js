@@ -45,7 +45,7 @@ const Index = () => {
         h1{
            font-weight: 300;
            font-size: 60px;
-           margin: 10px 0;
+           margin: 10px 0 30px 0;
         }
         .content {
           position: relative;
