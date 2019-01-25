@@ -3,7 +3,7 @@ import resizeEffect from '../effects/resizeEffect'
 import scrollEffect from '../effects/scrollEffect'
 
 const Stars = () => {
-  const { 
+  const {
     starsImageHeight
   } = resizeEffect()
   const {
@@ -23,6 +23,7 @@ const Stars = () => {
           height: ${starsImageHeight}px;
           width: 100%;
           z-index: 1;
+
         }
       `}
       </style>
