@@ -6,9 +6,9 @@ import countDownEffect from '../effects/countDownEffect'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlassCheers, faPlane, faBed } from '@fortawesome/free-solid-svg-icons'
+import { faGlassCheers, faPlane, faBed, faShoppingBag, faHiking, faWineGlassAlt, faBicycle, faFish, faUtensils } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGlassCheers, faPlane, faBed)
+library.add(faGlassCheers, faPlane, faBed, faShoppingBag, faWineGlassAlt, faHiking, faBicycle, faFish, faUtensils)
 
 const Index = () => {
   const {
@@ -45,7 +45,7 @@ const Index = () => {
         h1{
            font-weight: 300;
            font-size: 60px;
-           margin: 10px 0;
+           margin: 10px 0 30px 0;
         }
         .content {
           position: relative;
@@ -60,7 +60,7 @@ const Index = () => {
           max-width: 800px;
         }
         .content p {
-          color: #fff;
+          color: #eff;
           font-size: 14px;
           letter-spacing: 1px;
           margin-top: 35px;
@@ -68,9 +68,11 @@ const Index = () => {
           text-transform: none;
         }
         .content a {
-          color: #eee;
+          color: #fff;
           text-decoration: none;
           display: inline-block;
+          padding-bottom: 0;
+          line-height: 20px;
           border-bottom: 1px dotted #eee;
         }
         .footer {
@@ -110,7 +112,7 @@ const Index = () => {
           .footer {
             padding: 50px;
           }
-          .events {
+          .events, .section {
             flex-direction: column;
           }
         }
@@ -120,12 +122,16 @@ const Index = () => {
         .section p {
           font-size: 16px;
         }
-        .events {
+        .events, .hotels {
           display: flex;
         }
-        .event {
+        .event, .hotel {
           flex: 1;
-          
+        }
+        .hotel {
+          font-size: 12px !important;
+          line-height: 20px;
+          padding: 0 10px;
         }
         .event p {
           line-height: 26px;
@@ -140,12 +146,12 @@ const Index = () => {
       `}
       </style>
       <div className="body-wrap">
-        
+
         <div className="content">
-          <h2>Ben Ipsen & Sarah Tantillo</h2> 
+          <h2>Ben Ipsen & Sarah Tantillo</h2>
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3>{countDown}</h3>
-          <p><b>RSVP information will arrive with invitations soon.</b> <br /> 
+          <p><b>RSVP information will arrive with invitations soon.</b> <br />
           We look forward to having you with us in September.</p>
 
           <div className="section">
@@ -172,71 +178,127 @@ const Index = () => {
                   Semi-formal Attire<br />
                 </p>
               </div>
-            </div>  
+            </div>
           </div>
 
           <div className="section">
-          <FontAwesomeIcon icon="plane" size="3x" style={{ marginBottom: 20 }} />
-            <h2>Traveling Here</h2>
-<p>
-  For those of you <b>flying</b> to join us, <b>Portland International Airport <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b> 
-  has flights to and from all major airports.
-  Portland (our home) is a vibrant city with a great food scene. We encourage you to take some time to explore it if your plans allow.
-</p>
-<p>
-  To make the most of your time here in northwest Oregon, <b>we recommend renting a car</b>. Alternatively, there are <b>shuttles and/or bus</b> available 
-  to transport you to where the wedding events will take place. <b>Uber</b> and <b>Lyft</b> are available for local transport around Portland and Hood River.
-</p>
+            <FontAwesomeIcon icon="plane" size="3x" style={{ marginBottom: 20 }} />
 
-</div>
-<div className="section">
-<FontAwesomeIcon icon="bed" size="3x" style={{ marginBottom: 20 }} />
-<h2>Where to Stay</h2>
+            <h2>Traveling</h2>
             <p style={{ fontSize: 18 }}>
-            We highly recommend all guests stay in <b>Hood River</b>, a quaint town on the Columbia River which is about a <b>one hour drive from Portland.</b>
+              <b>Portland International Airport <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b>
+              serves flights to and from most major airports in the US. Wedding events will take place an hour's drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
             </p>
-<p>
-  <b>Transporation will be provided to/from downtown Hood River to the wedding</b> which will take place at Mt Hood Organic Farms in Parkdale.
-</p>
-
-<p>
-Bigger groups of family and/or friends may prefer to <b>rent a house</b>. 
-There are serveral options on <b>
-  <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
-</b> as well as{' '}
-<b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
-{' '}
-Should you find <b>a hotel</b> more suitable, we suggest one of the following:
-</p>
-<p style={{ fontSize: 13 }}>
-<b><a href="https://goo.gl/maps/Qv3uUZGwZNP2" target="_blank">Hampton Inn</a><br /></b> 
-No-frills, newer hotel close to downtown and walking distance to the welcome party.
-</p>
-<p style={{ fontSize: 13 }}>
-<b><a href="https://goo.gl/maps/E1vLFG3JufK2" target="_blank">The Hood River Hotel</a></b><br /> 
-Historic hotel in the heart of downtown. This one will book up fast!
-</p> 
-<p style={{ fontSize: 13 }}>
-<b><a href="https://goo.gl/maps/aVonasXAbJR2" target="_blank">Best Western Inn</a></b><br />
-Slightly outdated but within a walking distance from the water and downtown.
-
+            <p>
+              To make the most of your time in Oregon <b>we recommend renting a car</b>. This will provide the most flexibility and options for activity during your trip.
+            </p>
+            <p>
+              Alternatively, there are <a href="https://www.rome2rio.com/map/Portland-Airport-PDX/Hood-River" target="_blank"><b>shuttles available</b></a> between Portland and where the wedding events will take place.{' '}
+              <b>Uber</b> and <b>Lyft</b> are available for local transport.
             </p>
           </div>
+
+          <div className="section">
+            <FontAwesomeIcon icon="bed" size="3x" style={{ marginBottom: 20 }} />
+            <h2>Where to Stay</h2>
+            <p style={{ fontSize: 18 }}>
+              During the wedding weekend we <b>suggest staying in Hood River.</b> Transporation to and from the wedding will be provided from one or two locations in the city.
+            </p>
+
+            <p>
+              Bigger groups of family and/or friends may prefer to <b>rent a house</b>.
+              There are serveral options on <b>
+              <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
+            </b> as well as{' '}
+            <b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
+            </p>
+            <p>
+            Should you find <b>a hotel</b> more suitable, we suggest one of the following:
+            </p>
+            <div className="hotels">
+              <p className="hotel">
+              <b><a href="https://goo.gl/maps/Qv3uUZGwZNP2" target="_blank">Hampton Inn</a><br /></b>
+                A newer hotel, downtown and walking distance to the welcome party.
+              </p>
+              <p className="hotel">
+              <b><a href="https://goo.gl/maps/E1vLFG3JufK2" target="_blank">The Hood River Hotel</a></b><br />
+                Historic hotel in the heart of downtown. This one will book up fast!
+              </p>
+              <p className="hotel">
+              <b><a href="https://goo.gl/maps/aVonasXAbJR2" target="_blank">Best Western Inn</a></b><br />
+                Slightly outdated but within a walking distance from the water and downtown.
+
+              </p>
+            </div>
+          </div>
+
+        <div className="section">
+          <FontAwesomeIcon icon="bicycle" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <FontAwesomeIcon icon="shopping-bag" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <FontAwesomeIcon icon="hiking" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <FontAwesomeIcon icon="utensils" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <FontAwesomeIcon icon="wine-glass-alt" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <FontAwesomeIcon icon="fish" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+          <h2>What To Do</h2>
+          <p style={{ fontSize: 18 }}>
+            We're excited for you to come see our home (and playground) in the <b>Great Pacific Northwest.</b>
+            {' '}Whether you are here for the weekend or a week, here are some things to do and check out:
+          </p>
+          <p>
+            <b>Explore Portland:</b> Our home is a vibrant city with a great food & drink scene. <br />
+            A few of our favorite neighborhoods to eat in are <a href="https://goo.gl/maps/MFcdkdtdh9T2" target="_blank"><b>N Mississippi</b></a>,{' '}
+            <a href="https://goo.gl/maps/6pgCLYfcSoG2" target="_blank"><b>NE Alberta</b></a>, and
+            <a href="https://goo.gl/maps/Enr6wvsvoFF2" target="_blank"><b>NW 21st - 23rd Ave</b>.</a>{' '}
+
+            Between meals be sure to check out {' '}
+            <a href="https://goo.gl/maps/nLiTWxdutb92" target="_blank"><b>The Japanese & Rose Gardens</b></a>,{' '}
+            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittok Mansion & Forest Park</b></a>,{' '}
+            <a href="https://goo.gl/maps/3tiiCwVT33k" target="_blank"><b>Powells City of Books,</b></a>{' '}
+            and <a href="https://goo.gl/maps/693QTtRPGu22" target="_blank"><b>OMSI</b></a>.
+          </p>
+
+          <p>
+            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activites</b> such as{' '}
+            <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
+            <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
+            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a> .
+            Rental equipment is readily available in town.
+            <br />
+            There are plenty of{' '}
+            <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
+            <b>vinards and wine tastings</b></a> near by and Hood River's quaint downtown
+            offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
+
+            Some or our favorite places to eat in Hood River are:
+
+          </p>
+
+          <p>
+            <b>Explore Oregon:</b>{' '}
+            Stunning coastal views are only 2 hours from the Portland Airport. Check out the coastline and grab a coffee in <a href="https://goo.gl/maps/AuPGtUjBEAp" target="_blank"><b>Cannon Beach</b></a>. {' '}
+            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Bouy Beer Co.</b></a> in Astoria.
+            For more outdoor activity and guranteed sunshine the outdoorsy town of{' '}
+            <a href="https://goo.gl/maps/2X6UrBPUU5w" target="_blank"><b>Bend</b></a> is about 2.5 hours from Hood River.
+
+          </p>
+
+        </div>
+
 <br />
         <p style={{ marginTop: 50, marginBottom: 50, fontSize: 18 }}>
-          Please <b><a href="mailto:sarahtantillo@gmail.com">get in touch with us</a></b> should you have more specific questions. 
+          Please <b><a href="mailto:sarahtantillo@gmail.com">get in touch with us</a></b> should you have more specific questions.
           <br />We're happy to help and can't wait to see you!
         </p>
-        <br />              
+        <br />
         </div>
-        <Stars /> 
+        <Stars />
         <FooterImage />
         <div className="footer">
-          <p>Coded with React 16 + Next.js + &#9829;. Deployed fearlessly with <a href="https://now.sh" target="_blank">Now</a>.<br /> 
+          <p>Coded with React 16 + Next.js + &#9829;. Deployed fearlessly with <a href="https://now.sh" target="_blank">Now</a>.<br />
           Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
         </div>
       </div>
-  
+
     </div>
   )
 }
