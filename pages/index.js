@@ -28,7 +28,7 @@ const Index = () => {
           font-weight: 100;
           font-style: normal;
           margin: 0;
-          paddding: 0;
+          padding: 0;
           background-image: -webkit-linear-gradient(top, #295b7c 0%,#b7ab77 113%, #E9D3B4 100%);
           background-repeat: no-repeat;
         }
@@ -202,12 +202,12 @@ const Index = () => {
             <FontAwesomeIcon icon="bed" size="3x" style={{ marginBottom: 20 }} />
             <h2>Where to Stay</h2>
             <p style={{ fontSize: 18 }}>
-              During the wedding weekend we <b>suggest staying in Hood River.</b> Transporation to and from the wedding will be provided from one or two locations in the city.
+              During the wedding weekend we <b>suggest staying in Hood River.</b> Transportation to and from the wedding will be provided from one or two locations in the city.
             </p>
 
             <p>
               Bigger groups of family and/or friends may prefer to <b>rent a house</b>.
-              There are serveral options on <b>
+              There are several options on <b>
               <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
             </b> as well as{' '}
             <b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
@@ -252,31 +252,34 @@ const Index = () => {
 
             Between meals be sure to check out {' '}
             <a href="https://goo.gl/maps/nLiTWxdutb92" target="_blank"><b>The Japanese & Rose Gardens</b></a>,{' '}
-            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittok Mansion & Forest Park</b></a>,{' '}
+            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittock Mansion & Forest Park</b></a>,{' '}
             <a href="https://goo.gl/maps/3tiiCwVT33k" target="_blank"><b>Powells City of Books,</b></a>{' '}
             and <a href="https://goo.gl/maps/693QTtRPGu22" target="_blank"><b>OMSI</b></a>.
           </p>
 
           <p>
-            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activites</b> such as{' '}
+            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activities</b> such as{' '}
             <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
             <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
-            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a> .
+            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a>.<br />
             Rental equipment is readily available in town.
-            <br />
+            </p>
+            <p>
             There are plenty of{' '}
             <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
-            <b>vinards and wine tastings</b></a> near by and Hood River's quaint downtown
+            <b>vineyards and wine tastings</b></a> within a short drive and Hood River's quaint downtown
             offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
 
-            Some or our favorite places to eat in Hood River are:
-
+            Some or our favorite places to eat in Hood River are: {' '}
+              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe </b> (amazing breakfast sandos!)</a>,{' '}
+              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '} and
+              and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
           </p>
 
           <p>
             <b>Explore Oregon:</b>{' '}
             Stunning coastal views are only 2 hours from the Portland Airport. Check out the coastline and grab a coffee in <a href="https://goo.gl/maps/AuPGtUjBEAp" target="_blank"><b>Cannon Beach</b></a>. {' '}
-            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Bouy Beer Co.</b></a> in Astoria.
+            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Buoy Beer Co.</b></a> in Astoria.
             For more outdoor activity and guranteed sunshine the outdoorsy town of{' '}
             <a href="https://goo.gl/maps/2X6UrBPUU5w" target="_blank"><b>Bend</b></a> is about 2.5 hours from Hood River.
 
