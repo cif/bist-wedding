@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Stars from '../components/Stars'
 import FooterImage from '../components/FooterImage'
+import RsvpForm from '../components/RsvpForm'
 import countDownEffect from '../effects/countDownEffect'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -79,6 +80,7 @@ const Index = () => {
           position: relative;
           background-color: #2c6c69;
           padding: 35px 20px 50px 20px;
+          margin-top: -25px;
           text-align: center;
           font-size: 13px;
           line-height: 25px;
@@ -112,7 +114,7 @@ const Index = () => {
           .footer {
             padding: 50px;
           }
-          .events, .section {
+          .events, .section, .hotels {
             flex-direction: column;
           }
         }
@@ -133,7 +135,14 @@ const Index = () => {
           line-height: 20px;
           padding: 0 10px;
         }
+        .event h4 {
+          margin: 0;
+          margin-top: 36px;
+          color: #fff;
+          letter-spacing: 3px;
+        }
         .event p {
+          margin-top: 3px;
           line-height: 26px;
         }
         .event i {
@@ -141,7 +150,7 @@ const Index = () => {
         }
         h4 {
           margin: 0;
-          font-size: 18px;
+          font-size: 18px
         }
       `}
       </style>
@@ -151,16 +160,14 @@ const Index = () => {
           <h2>Ben Ipsen & Sarah Tantillo</h2>
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3>{countDown}</h3>
-          <p><b>RSVP information will arrive with invitations soon.</b> <br />
-          We look forward to having you with us in September.</p>
-
+          <RsvpForm />
           <div className="section">
             <FontAwesomeIcon icon="glass-cheers" size="3x" style={{ marginBottom: 20 }} />
             <h2>Schedule Of Events</h2>
             <div className="events">
               <div className="event">
-                <p>
-                  <h4>Welcome</h4>
+                <h4>Welcome</h4>
+                <p>  
                   Friday, September 13th, 5:00p<br />
                   <a href="https://goo.gl/maps/DRaWLiyT3Xq" target="_blank">
                     <b>The Marina Park</b></a><br /><i>Hood River, Oregon</i>
@@ -169,8 +176,8 @@ const Index = () => {
                 </p>
               </div>
               <div className="event">
-                <p>
-                  <h4>Wedding</h4>
+                <h4>Wedding</h4>
+                <p> 
                   Saturday, September 14th, 4:00p<br />
                   <a href="https://goo.gl/maps/rhTarrddCq12" target="_blank">
                     <b>Mt. Hood Organic Farms</b></a><br /><i>Parkdale, Oregon</i>
@@ -271,7 +278,7 @@ const Index = () => {
             offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
 
             Some or our favorite places to eat in Hood River are: {' '}
-              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe </b> (amazing breakfast sandos!)</a>,{' '}
+              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
               <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '} and
               and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
           </p>
