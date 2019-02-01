@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Stars from '../components/Stars'
 import FooterImage from '../components/FooterImage'
 import RsvpForm from '../components/RsvpForm'
-import countDownEffect from '../effects/countDownEffect'
+import Countdown from '../components/Countdown'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,9 +12,6 @@ import { faGlassCheers, faPlane, faBed, faShoppingBag, faHiking, faWineGlassAlt,
 library.add(faGlassCheers, faPlane, faBed, faShoppingBag, faWineGlassAlt, faHiking, faBicycle, faFish, faUtensils)
 
 const Index = () => {
-  const {
-    countDown
-  } = countDownEffect()
   return (
     <div>
       <Head>
@@ -159,7 +156,7 @@ const Index = () => {
         <div className="content">
           <h2>Ben Ipsen & Sarah Tantillo</h2>
           <h1>09&nbsp; 14&nbsp; 19</h1>
-          <h3>{countDown}</h3>
+          <h3><Countdown /></h3>
           <RsvpForm />
           <div className="section">
             <FontAwesomeIcon icon="glass-cheers" size="3x" style={{ marginBottom: 20 }} />
