@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Stars from '../components/Stars'
 import FooterImage from '../components/FooterImage'
+import RsvpForm from '../components/RsvpForm'
 import countDownEffect from '../effects/countDownEffect'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,7 +29,7 @@ const Index = () => {
           font-weight: 100;
           font-style: normal;
           margin: 0;
-          paddding: 0;
+          padding: 0;
           background-image: -webkit-linear-gradient(top, #295b7c 0%,#b7ab77 113%, #E9D3B4 100%);
           background-repeat: no-repeat;
         }
@@ -79,6 +80,7 @@ const Index = () => {
           position: relative;
           background-color: #2c6c69;
           padding: 35px 20px 50px 20px;
+          margin-top: -25px;
           text-align: center;
           font-size: 13px;
           line-height: 25px;
@@ -112,7 +114,7 @@ const Index = () => {
           .footer {
             padding: 50px;
           }
-          .events, .section {
+          .events, .section, .hotels {
             flex-direction: column;
           }
         }
@@ -133,7 +135,14 @@ const Index = () => {
           line-height: 20px;
           padding: 0 10px;
         }
+        .event h4 {
+          margin: 0;
+          margin-top: 36px;
+          color: #fff;
+          letter-spacing: 3px;
+        }
         .event p {
+          margin-top: 3px;
           line-height: 26px;
         }
         .event i {
@@ -141,7 +150,7 @@ const Index = () => {
         }
         h4 {
           margin: 0;
-          font-size: 18px;
+          font-size: 18px
         }
       `}
       </style>
@@ -151,16 +160,14 @@ const Index = () => {
           <h2>Ben Ipsen & Sarah Tantillo</h2>
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3>{countDown}</h3>
-          <p><b>RSVP information will arrive with invitations soon.</b> <br />
-          We look forward to having you with us in September.</p>
-
+          <RsvpForm />
           <div className="section">
             <FontAwesomeIcon icon="glass-cheers" size="3x" style={{ marginBottom: 20 }} />
             <h2>Schedule Of Events</h2>
             <div className="events">
               <div className="event">
+                <h4>Welcome</h4>
                 <p>
-                  <h4>Welcome</h4>
                   Friday, September 13th, 5:00p<br />
                   <a href="https://goo.gl/maps/DRaWLiyT3Xq" target="_blank">
                     <b>The Marina Park</b></a><br /><i>Hood River, Oregon</i>
@@ -169,8 +176,8 @@ const Index = () => {
                 </p>
               </div>
               <div className="event">
+                <h4>Wedding</h4>
                 <p>
-                  <h4>Wedding</h4>
                   Saturday, September 14th, 4:00p<br />
                   <a href="https://goo.gl/maps/rhTarrddCq12" target="_blank">
                     <b>Mt. Hood Organic Farms</b></a><br /><i>Parkdale, Oregon</i>
@@ -261,16 +268,19 @@ const Index = () => {
             <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activities</b> such as{' '}
             <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
             <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
-            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a> .
+            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a>.<br />
             Rental equipment is readily available in town.
-            <br />
+            </p>
+            <p>
             There are plenty of{' '}
             <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
             <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
             offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
 
-            Some or our favorite places to eat in Hood River are:
-
+            Some or our favorite places to eat in Hood River are: {' '}
+              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
+              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '} and
+              and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
           </p>
 
           <p>
