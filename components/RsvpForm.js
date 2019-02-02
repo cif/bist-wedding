@@ -108,14 +108,16 @@ const RsvpForm = () => {
           button, input, select {
             width: 90%;
             margin: 5px 0;
-            padding: 5%;
+            padding: 20px 3%;
             font-size: 15px;
           }
           select {
-            width: 99%;
+            width: 96%;
             margin: 0;
             margin-top: 20px;
-            margin-bottom: -10px;
+            margin-bottom: -20px;
+            padding: 10px;
+            height: 50px;
           }
           button {
             width: 95%

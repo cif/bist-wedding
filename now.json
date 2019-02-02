@@ -1,10 +1,3 @@
 {
-  "dev": {
-    "apiKey": "AIzaSyB2lvjgxcLvcPq_mJuXzaXJTri8KzeLugA",
-    "authDomain": "wedding-baeaa.firebaseapp.com",
-    "databaseURL": "https://wedding-baeaa.firebaseio.com",
-    "projectId": "wedding-baeaa",
-    "storageBucket": "wedding-baeaa.appspot.com",
-    "messagingSenderId": "767406724507"
-  }
+  "version": 1
 }

@@ -39,7 +39,10 @@ const rsvpEffect = () => {
   }
 
   const guestCanGo = () => {
-    if (names === '') return
+    console.log('what the fck???', names)
+    if (names <= ''){
+      return
+    }
     setRsvpInFlight(true)
     updateFirebase(
       'going',
@@ -48,8 +51,10 @@ const rsvpEffect = () => {
     updateGuestCount()
   }
   const guestCannotGo = () => {
+    if (names <= ''){
+      return
+    }
     setRsvpInFlight(true)
-    if (names === '') return
     updateFirebase(
       'notgoing',
       'Sorry to hear, but we get it. You will be missed!'
