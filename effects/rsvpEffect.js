@@ -39,7 +39,6 @@ const rsvpEffect = () => {
   }
 
   const guestCanGo = () => {
-    console.log('what the fck???', names)
     if (names <= ''){
       return
     }
