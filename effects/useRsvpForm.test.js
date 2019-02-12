@@ -1,4 +1,4 @@
-import useRsvpForm from './useRsvpForm'
+import useRsvpForm, { counterTransaction } from './useRsvpForm'
 import { testHook, cleanup, wait } from 'react-testing-library'
 import firebase from '../firebase'
 import '@babel/polyfill' // required for running async
@@ -151,6 +151,40 @@ describe('effects/useRsvpForm', () => {
         expect(mockRef).toHaveBeenCalledWith('notgoing/Billy+Sue')
         expect(rsvpMessage).toContain('Sorry')
       })
+    })
+  })
+
+  test('it should set errors when guest count transactions fail', async () => {
+    let guestCanGo,
+    rsvpInFlight,
+    setNames,
+    rsvpMessage
+
+    testHook(() => ({
+      guestCanGo,
+      rsvpInFlight,
+      setNames,
+      rsvpMessage
+    } = useRsvpForm()))
+
+    mockTransaction.mockRejectedValue('Boom!')
+    mockSet.mockResolvedValue(true)
+
+    setNames('Dave+Martha#.$[]')
+    guestCanGo()
+    expect(rsvpInFlight).toBe(true)
+    expect(mockRef).toHaveBeenCalledWith('/guestCount')
+    await wait(() => {
+      expect(rsvpInFlight).toBe(false)
+      expect(rsvpMessage).toContain('Oh no')
+    })
+  })
+
+  describe('counterTransaction', () => {
+    test('increments current count by casted guest count', () => {
+      expect(
+        counterTransaction('2')(1)
+      ).toBe(3)
     })
   })
 })

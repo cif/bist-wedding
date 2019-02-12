@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import firebase from '../firebase'
 
+export const counterTransaction = (guests) => (count) => count + Number(guests)
+
 const useRsvpForm = () => {
   const [names, setNames] = useState('')
   const [guests, setGuests] = useState('2')
@@ -12,7 +14,7 @@ const useRsvpForm = () => {
       .database()
       .ref('/guestCount')
       .transaction(
-        (count) => count + Number(guests)
+        counterTransaction(guests)
       ).catch(() => {
         setRsvpInFlight(false)
         setRsvpMessage('Oh no! Something went wrong. Sorry. Please refresh and try again.')
