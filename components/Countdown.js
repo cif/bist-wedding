@@ -1,9 +1,9 @@
 import React from 'react'
-import countDownEffect from '../effects/countDownEffect'
+import useCountdown from '../effects/useCountdown'
 const Countdown = () => {
   const {
     countDown
-  } = countDownEffect()
+  } = useCountdown()
   return countDown
 }
 
