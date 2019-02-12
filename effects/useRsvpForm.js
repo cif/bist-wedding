@@ -21,8 +21,8 @@ const useRsvpForm = () => {
   const updateFirebase = (goingOrNotGoing, message) => {
     setTimeout(() => {
       firebase
-        .database()
-        .ref(`${goingOrNotGoing}/${names}`)
+        .database() // invalid path chars: ".", "#", "$", "[", or "]"
+        .ref(`${goingOrNotGoing}/${names.replace(/\.\#\\$\[]/g,'')}`)
         .set({
           names,
           guests

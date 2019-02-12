@@ -108,7 +108,7 @@ describe('effects/useRsvpForm', () => {
       mockTransaction.mockResolvedValue(true)
       mockSet.mockRejectedValue(true)
 
-      setNames('Dave+Martha')
+      setNames('Dave+Martha#.$[]')
       guestCanGo()
       expect(rsvpInFlight).toBe(true)
       expect(mockRef).toHaveBeenCalledWith('/guestCount')
