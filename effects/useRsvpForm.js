@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import firebase from '../firebase'
 
-const rsvpEffect = () => {
+const useRsvpForm = () => {
   const [names, setNames] = useState('')
   const [guests, setGuests] = useState('2')
   const [rsvpInFlight, setRsvpInFlight] = useState(false)
-  const [rsvpMessage, setRsvpMessage] = useState(false)
+  const [rsvpMessage, setRsvpMessage] = useState('')
 
   const updateGuestCount = () =>
     firebase
@@ -21,21 +21,21 @@ const rsvpEffect = () => {
   const updateFirebase = (goingOrNotGoing, message) => {
     setTimeout(() => {
       firebase
-      .database()
-      .ref(`${goingOrNotGoing}/${names}`)
-      .set({
-        names,
-        guests
-      })
-      .then(() => {
-        setRsvpInFlight(false)
-        setRsvpMessage(message)
-      })
-      .catch(() => {
-        setRsvpInFlight(false)
-        setRsvpMessage('Oh no! Something went wrong. Sorry. Please refresh and try again.')
-      })
-    }, 2000) // wait a few to keep the suspense
+        .database()
+        .ref(`${goingOrNotGoing}/${names}`)
+        .set({
+          names,
+          guests
+        })
+        .then(() => {
+          setRsvpInFlight(false)
+          setRsvpMessage(message)
+        })
+        .catch(() => {
+          setRsvpInFlight(false)
+          setRsvpMessage('Oh no! Something went wrong. Sorry. Please refresh and try again.')
+        })
+    }, 1200) // wait a few ms to allow loading message read
   }
 
   const guestCanGo = () => {
@@ -72,4 +72,4 @@ const rsvpEffect = () => {
   }
 }
 
-export default rsvpEffect
+export default useRsvpForm

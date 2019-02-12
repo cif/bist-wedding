@@ -1,5 +1,5 @@
 import React from 'react'
-import rsvpEffect from '../effects/rsvpEffect'
+import useRsvpForm from '../effects/useRsvpForm'
 
 
 const RsvpMessage = ({ message }) => (
@@ -40,7 +40,7 @@ const RsvpForm = () => {
     guestCannotGo,
     rsvpInFlight,
     rsvpMessage
-  } = rsvpEffect()
+  } = useRsvpForm()
 
   if (rsvpInFlight) {
     return <RsvpLoading />
