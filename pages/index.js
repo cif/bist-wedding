@@ -191,7 +191,7 @@ const Index = () => {
             <h2>Traveling</h2>
             <p style={{ fontSize: 18 }}>
               <b>Portland International Airport <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b>
-              serves flights to and from most major airports in the US. Wedding events will take place an hour's drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
+              serves flights to and from most major airports. Wedding events will take place an hour's drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
             </p>
             <p>
               To make the most of your time in Oregon <b>we recommend renting a car</b>. This will provide the most flexibility and more activity options during your trip.
@@ -276,7 +276,7 @@ const Index = () => {
 
             Some or our favorite places to eat in Hood River are: {' '}
               <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
-              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '} and
+              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '}
               and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
           </p>
 
