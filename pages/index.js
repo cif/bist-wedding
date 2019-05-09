@@ -210,7 +210,7 @@ const Index = () => {
             <h2>Traveling</h2>
             <p style={{ fontSize: 18 }}>
               <b>Portland International Airport <a href="https://goo.gl/maps/Ku8gzBacGYP2" target="_blank">(PDX)</a>{' '}</b>
-              serves flights to and from most major airports. Wedding events will take place an hour's drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
+              serves flights to and from most major airports. Wedding events will take place an hour drive from Portland in <a href="https://goo.gl/maps/kYpD349ykB72" target="_blank"><b>Hood River</b></a>.
             </p>
             <p>
               To make the most of your time in Oregon <b>we recommend renting a car</b>. This will provide the most flexibility and more activity options during your trip.
@@ -225,7 +225,7 @@ const Index = () => {
             <FontAwesomeIcon icon="bed" size="3x" style={{ marginBottom: 20 }} />
             <h2>Where to Stay</h2>
             <p style={{ fontSize: 18 }}>
-              During the wedding weekend we <b>suggest staying in Hood River.</b> Transportation to and from the wedding will be provided from one or two locations in the city.
+              During the wedding weekend we <b>suggest staying in Hood River.</b> Optional bus transportation to and from the wedding will be provided from The Hampton Inn.
             </p>
 
             <p>
