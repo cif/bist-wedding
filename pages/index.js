@@ -7,9 +7,9 @@ import Countdown from '../components/Countdown'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlassCheers, faPlane, faBed, faShoppingBag, faHiking, faWineGlassAlt, faBicycle, faFish, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faGlassCheers, faPlane, faBed, faShoppingBag, faHiking, faWineGlassAlt, faBicycle, faFish, faUtensils, faGift } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGlassCheers, faPlane, faBed, faShoppingBag, faWineGlassAlt, faHiking, faBicycle, faFish, faUtensils)
+library.add(faGlassCheers, faPlane, faBed, faShoppingBag, faWineGlassAlt, faHiking, faBicycle, faFish, faUtensils, faGift)
 
 const Index = () => {
   return (
@@ -88,6 +88,20 @@ const Index = () => {
           font-weight: 400;
           text-decoration: none;
         }
+        
+        .content a.giftButton{
+          display: inline-block;
+          background-color: #FFF;
+          color: #687f7a;
+          padding: 19px 70px;
+          font-size: 25px;
+          border: none;
+          border-radius: 5px;
+          urbane-rounded, sans-serif;
+          margin: 5px;
+          cursor: pointer;
+        }
+
         @media only screen and (max-width: 900px)  {
           .content {
              min-height: 100px;
@@ -158,6 +172,7 @@ const Index = () => {
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3><Countdown /></h3>
           <RsvpForm />
+          
           <div className="section">
             <FontAwesomeIcon icon="glass-cheers" size="3x" style={{ marginBottom: 20 }} />
             <h2>Schedule Of Events</h2>
@@ -182,6 +197,10 @@ const Index = () => {
                   Semi-formal Attire<br />
                 </p>
               </div>
+            </div>
+            <div style={{textAlign: 'center'}}>
+              <p><b>SHUTTLES TO THE WEDDING<br /></b>Shuttles will depart from the <a href="https://goo.gl/maps/GWthaa8Ren7VbxW79" target="_blank">
+              Hampton Inn & Suites</a> at 3:00p on Saturday afternoon.<br />Shuttles are open to all guests even if you are not staying at the hotel.</p>
             </div>
           </div>
 
@@ -236,67 +255,81 @@ const Index = () => {
             </div>
           </div>
 
-        <div className="section">
-          <FontAwesomeIcon icon="bicycle" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <FontAwesomeIcon icon="shopping-bag" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <FontAwesomeIcon icon="hiking" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <FontAwesomeIcon icon="utensils" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <FontAwesomeIcon icon="wine-glass-alt" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <FontAwesomeIcon icon="fish" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
-          <h2>What To Do</h2>
-          <p style={{ fontSize: 18 }}>
-            We're excited for you to come see our home (and playground) in the <b>Great Pacific Northwest.</b>
-            {' '}Whether you are here for the weekend or a week, here are some things to do and check out:
-          </p>
-          <p>
-            <b>Explore Portland:</b> Our home is a vibrant city with a great food & drink scene. <br />
-            A few of our favorite neighborhoods to eat in are <a href="https://goo.gl/maps/MFcdkdtdh9T2" target="_blank"><b>N Mississippi</b></a>,{' '}
-            <a href="https://goo.gl/maps/6pgCLYfcSoG2" target="_blank"><b>NE Alberta</b></a>, and
-            <a href="https://goo.gl/maps/Enr6wvsvoFF2" target="_blank"><b>NW 21st - 23rd Ave</b>.</a>{' '}
+          <div className="section">
+            <FontAwesomeIcon icon="gift" size="3x" style={{ marginBottom: 20 }} />
 
-            Between meals be sure to check out {' '}
-            <a href="https://goo.gl/maps/nLiTWxdutb92" target="_blank"><b>The Japanese Gardens</b></a>,{' '}
-            <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittock Mansion</b></a>,{' '}
-            <a href="https://goo.gl/maps/3tiiCwVT33k" target="_blank"><b>Powells City of Books,</b></a>{' '}
-            and <a href="https://goo.gl/maps/693QTtRPGu22" target="_blank"><b>OMSI</b></a>.
-          </p>
-
-          <p>
-            <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activities</b> such as{' '}
-            <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
-            <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
-            and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a>.<br />
-            Rental equipment is readily available in town.
+            <h2>Gifts</h2>
+            <p style={{ fontSize: 20 }}>
+              Your presence at our wedding is a already a gift! <br /> We are lucky enough to have a house full of everything we need.<br />
+            </p>
+            <p>   
+              If you'd still like to give a gift, we have setup a secure site to help pay for our travels.
+            </p>
+            <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton">Contribute To Our Honeymoon</a> 
+            <br /><br />
+          </div>
+          
+          <div className="section">
+            <FontAwesomeIcon icon="bicycle" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <FontAwesomeIcon icon="shopping-bag" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <FontAwesomeIcon icon="hiking" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <FontAwesomeIcon icon="utensils" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <FontAwesomeIcon icon="wine-glass-alt" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <FontAwesomeIcon icon="fish" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
+            <h2>What To Do</h2>
+            <p style={{ fontSize: 18 }}>
+              We're excited for you to come see our home (and playground) in the <b>Great Pacific Northwest.</b>
+              {' '}Whether you are here for the weekend or a week, here are some things to do and check out:
             </p>
             <p>
-            There are plenty of{' '}
-            <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
-            <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
-            offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
+              <b>Explore Portland:</b> Our home is a vibrant city with a great food & drink scene. <br />
+              A few of our favorite neighborhoods to eat in are <a href="https://goo.gl/maps/MFcdkdtdh9T2" target="_blank"><b>N Mississippi</b></a>,{' '}
+              <a href="https://goo.gl/maps/6pgCLYfcSoG2" target="_blank"><b>NE Alberta</b></a>, and
+              <a href="https://goo.gl/maps/Enr6wvsvoFF2" target="_blank"><b>NW 21st - 23rd Ave</b>.</a>{' '}
 
-            Some or our favorite places to eat in Hood River are: {' '}
-              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
-              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '}
-              and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
+              Between meals be sure to check out {' '}
+              <a href="https://goo.gl/maps/nLiTWxdutb92" target="_blank"><b>The Japanese Gardens</b></a>,{' '}
+              <a href="https://goo.gl/maps/HfYY5dkcmpQ2" target="_blank"><b>Pittock Mansion</b></a>,{' '}
+              <a href="https://goo.gl/maps/3tiiCwVT33k" target="_blank"><b>Powells City of Books,</b></a>{' '}
+              and <a href="https://goo.gl/maps/693QTtRPGu22" target="_blank"><b>OMSI</b></a>.
+            </p>
+
+            <p>
+              <b>Explore Hood River:</b> A scenic town on the Columbia River offering endless <b>outdoor activities</b> such as{' '}
+              <a href="http://hoodriver.org/biking/" target="_blank"><b>biking</b></a>,{' '}
+              <a href="http://hoodriver.org/hood-river-hiking/" target="_blank"><b>hiking</b></a>,{' '}
+              and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a>.<br />
+              Rental equipment is readily available in town.
+              </p>
+              <p>
+              There are plenty of{' '}
+              <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
+              <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
+              offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
+
+              Some or our favorite places to eat in Hood River are: {' '}
+                <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
+                <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '}
+                and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
+            </p>
+
+            <p>
+              <b>Explore Oregon:</b>{' '}
+              Stunning coastal views are only 2 hours from the Portland Airport. Check out the coastline and grab a coffee in <a href="https://goo.gl/maps/AuPGtUjBEAp" target="_blank"><b>Cannon Beach</b></a>. {' '}
+              From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Buoy Beer Co.</b></a> in Astoria.
+              For more outdoor activity and sunshine in the high desert, the outdoorsy town of{' '}
+              <a href="https://goo.gl/maps/2X6UrBPUU5w" target="_blank"><b>Bend</b></a> is about 2.5 hours from Hood River.
+
+            </p>
+
+          </div>
+
+          <br />
+          <p style={{ marginTop: 50, marginBottom: 50, fontSize: 18 }}>
+            Please <b><a href="mailto:sarahtantillo@gmail.com">get in touch with us</a></b> should you have more specific questions.
+            <br />We're happy to help and can't wait to see you!
           </p>
-
-          <p>
-            <b>Explore Oregon:</b>{' '}
-            Stunning coastal views are only 2 hours from the Portland Airport. Check out the coastline and grab a coffee in <a href="https://goo.gl/maps/AuPGtUjBEAp" target="_blank"><b>Cannon Beach</b></a>. {' '}
-            From there head north to check out <a href="https://goo.gl/maps/3Lzn1CqTEsB2" target="_blank"><b>Buoy Beer Co.</b></a> in Astoria.
-            For more outdoor activity and sunshine in the high desert, the outdoorsy town of{' '}
-            <a href="https://goo.gl/maps/2X6UrBPUU5w" target="_blank"><b>Bend</b></a> is about 2.5 hours from Hood River.
-
-          </p>
-
-        </div>
-
-<br />
-        <p style={{ marginTop: 50, marginBottom: 50, fontSize: 18 }}>
-          Please <b><a href="mailto:sarahtantillo@gmail.com">get in touch with us</a></b> should you have more specific questions.
-          <br />We're happy to help and can't wait to see you!
-        </p>
-        <br />
+          <br />
         </div>
         <Stars />
         <FooterImage />

@@ -1,5 +1,5 @@
 import React from 'react'
-import useCountdown from '../effects/useCountdown'
+import useCountdown from '../effects/useCountDown'
 const Countdown = () => {
   const {
     countDown
