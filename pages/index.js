@@ -265,7 +265,7 @@ const Index = () => {
             <p>   
               If you'd still like to give a gift, we have setup a secure site to help pay for our travels.
             </p>
-            <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton">Contribute To Our Honeymoon</a> 
+            <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton" target="_blank">Contribute To Our Honeymoon</a> 
             <br /><br />
           </div>
           
