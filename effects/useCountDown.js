@@ -6,7 +6,6 @@ const durationTillWedding = () =>
   moment.duration((WEDDING_DATE_TS - moment(new Date()).unix()) * 1000)
 
 const durationToCountdown = (duration) => `
-  ${duration.months()} months,
   ${duration.days()} days,
   ${duration.hours()} hours,
   ${duration.minutes()} minutes,

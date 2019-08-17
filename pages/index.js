@@ -20,7 +20,7 @@ const Index = () => {
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, maximum-scale=1" />
       </Head>
       <style global jsx>
-      {`
+        {`
         body, html {
           font-family: urbane-rounded, sans-serif;
           font-weight: 100;
@@ -88,7 +88,7 @@ const Index = () => {
           font-weight: 400;
           text-decoration: none;
         }
-        
+
         .content a.giftButton{
           display: inline-block;
           background-color: #FFF;
@@ -171,8 +171,8 @@ const Index = () => {
           <h2>Ben Ipsen & Sarah Tantillo</h2>
           <h1>09&nbsp; 14&nbsp; 19</h1>
           <h3><Countdown /></h3>
-          <RsvpForm />
-          
+          {/* <RsvpForm /> */}
+
           <div className="section">
             <FontAwesomeIcon icon="glass-cheers" size="3x" style={{ marginBottom: 20 }} />
             <h2>Schedule Of Events</h2>
@@ -198,9 +198,9 @@ const Index = () => {
                 </p>
               </div>
             </div>
-            <div style={{textAlign: 'center'}}>
+            <div style={{ textAlign: 'center' }}>
               <p><b>SHUTTLES TO THE WEDDING<br /></b>Shuttles will depart from the <a href="https://goo.gl/maps/GWthaa8Ren7VbxW79" target="_blank">
-              Hampton Inn & Suites</a> at 3:00p on Saturday afternoon.<br />Shuttles are open to all guests even if you are not staying at the hotel.</p>
+                Hampton Inn & Suites</a> at 3:00p on Saturday afternoon.<br />Shuttles are open to all guests even if you are not staying at the hotel.</p>
             </div>
           </div>
 
@@ -231,24 +231,24 @@ const Index = () => {
             <p>
               Bigger groups of family and/or friends may prefer to <b>rent a house</b>.
               There are several options on <b>
-              <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
-            </b> as well as{' '}
-            <b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
+                <a href="https://www.airbnb.com/s/Hood-River--OR--United-States/all?refinement_paths%5B%5D=%2Ffor_you&query=Hood%20River%2C%20OR%2C%20United%20States&place_id=ChIJ5w8cTGEOllQRXJh9TX7P9lY&checkin=2019-09-13&checkout=2019-09-16" target="_blank">Airbnb</a>
+              </b> as well as{' '}
+              <b><a href="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=6&q=Hood%20River%2C%20OR%2C%20USA&from-date=2019-09-13&to-date=2019-09-16" target="_blank">VRBO.</a></b>
             </p>
             <p>
-            Should you find <b>a hotel</b> more suitable, we suggest one of the following:
+              Should you find <b>a hotel</b> more suitable, we suggest one of the following:
             </p>
             <div className="hotels">
               <p className="hotel">
-              <b><a href="https://goo.gl/maps/Qv3uUZGwZNP2" target="_blank">Hampton Inn</a><br /></b>
+                <b><a href="https://goo.gl/maps/Qv3uUZGwZNP2" target="_blank">Hampton Inn</a><br /></b>
                 A newer hotel, downtown and walking distance to the welcome party.
               </p>
               <p className="hotel">
-              <b><a href="https://goo.gl/maps/E1vLFG3JufK2" target="_blank">The Hood River Hotel</a></b><br />
+                <b><a href="https://goo.gl/maps/E1vLFG3JufK2" target="_blank">The Hood River Hotel</a></b><br />
                 Historic hotel in the heart of downtown. This one will book up fast!
               </p>
               <p className="hotel">
-              <b><a href="https://goo.gl/maps/aVonasXAbJR2" target="_blank">Best Western Inn</a></b><br />
+                <b><a href="https://goo.gl/maps/aVonasXAbJR2" target="_blank">Best Western Inn</a></b><br />
                 Slightly outdated but within a walking distance from the water and downtown.
 
               </p>
@@ -260,15 +260,20 @@ const Index = () => {
 
             <h2>Gifts</h2>
             <p style={{ fontSize: 20 }}>
-              Your presence at our wedding is a already a gift! <br /> We are lucky enough to have a house full of everything we need.<br />
+              Your presence at our wedding is already a gift!
             </p>
-            <p>   
-              If you'd still like to give a gift, we have setup a secure site to help pay for our travels.
+            <p>
+              If you'd still like to send a gift, we've have setup a secure site to help pay for our travels.
             </p>
-            <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton" target="_blank">Contribute To Our Honeymoon</a> 
+            <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton" target="_blank">Contribute To Our Honeymoon</a>
+            <p>
+              Our friend Adrian created a registry with some really cool items from her shop{' '}
+              <a href="https://bungalow608.com/" target="_blank">Bungalow 608.</a>
+            </p>
+            <a href="https://bungalow608.com/collections/the-bist-wedding" className="giftButton" target="_blank">Buy Us Cool Things</a>
             <br /><br />
           </div>
-          
+
           <div className="section">
             <FontAwesomeIcon icon="bicycle" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
             <FontAwesomeIcon icon="shopping-bag" size="2x" style={{ marginBottom: 20, marginRight: 15 }} />
@@ -301,16 +306,16 @@ const Index = () => {
               and <a href="http://hoodriver.org/fishing/" target="_blank"><b>fishing</b></a>.<br />
               Rental equipment is readily available in town.
               </p>
-              <p>
+            <p>
               There are plenty of{' '}
               <a href="https://www.google.com/maps/search/wine+tasting+near+hood+river/@45.6873467,-121.6214137,11z/data=!3m1!4b1" target="_blank">
-              <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
+                <b>vineyards and wine tastings</b></a> near by and Hood River's quaint downtown
               offers plenty of <a href="http://hoodriver.org/shop/" target="_blank"><b>shopping</b></a>.
 
               Some or our favorite places to eat in Hood River are: {' '}
-                <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
-                <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '}
-                and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
+              <a href="https://goo.gl/maps/n87JrmNnXLM2" target="_blank"><b>River Daze Cafe</b></a> (amazing breakfast sandos!),{' '}
+              <a href="https://goo.gl/maps/uAMh2vyHPgz" target="_blank"><b>Double Mountain Brewing</b></a>,{' '}
+              and <a href="https://goo.gl/maps/FseSRZBsHJF2" target="_blank"><b>pFriem Brewing</b></a>.{' '}
             </p>
 
             <p>
@@ -335,7 +340,7 @@ const Index = () => {
         <FooterImage />
         <div className="footer">
           <p>Coded with React 16 + Next.js + &#9829;. Deployed fearlessly with <a href="https://now.sh" target="_blank">Now</a>.<br />
-          Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
+            Please geek out on the <a href="https://github.com/cif/bist-wedding" target="_blank">source code.</a></p>
         </div>
       </div>
 
