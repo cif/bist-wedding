@@ -263,7 +263,7 @@ const Index = () => {
               Your presence at our wedding is already a gift!
             </p>
             <p>
-              If you'd still like to send a gift, we've have setup a secure site to help pay for our travels.
+              If you'd still like to send a gift, we've set up a secure site to help pay for our travels.
             </p>
             <a href="https://www.honeyfund.com/wedding/thebistwedding" className="giftButton" target="_blank">Contribute To Our Honeymoon</a>
             <p>
